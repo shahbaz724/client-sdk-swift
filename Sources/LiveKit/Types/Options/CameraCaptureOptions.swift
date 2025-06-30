@@ -18,7 +18,7 @@
 import Foundation
 
 @objc
-public final class CameraCaptureOptions: NSObject, VideoCaptureOptions, Sendable {
+public final class CameraCaptureOptions: NSObject, VideoCaptureOptions {
     #if !os(visionOS)
     /// Preferred deviceType to use. If ``device`` is specified, it will be used instead. This is currently ignored for visionOS.
     @objc

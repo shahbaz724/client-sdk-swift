@@ -16,7 +16,6 @@
 
 import Foundation
 
-@objc
 public protocol LocalTrack where Self: Track {
     @objc
     var publishOptions: TrackPublishOptions? { get }

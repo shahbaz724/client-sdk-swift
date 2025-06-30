@@ -18,7 +18,6 @@ import Foundation
 
 internal import LiveKitWebRTC
 
-@objc
 public protocol VideoTrack where Self: Track {
     @objc(addVideoRenderer:)
     func add(videoRenderer: VideoRenderer)

@@ -90,8 +90,7 @@ public class VideoView: NativeView, Loggable {
         set { _state.mutate { $0.rotationOverride = newValue } }
     }
 
-    /// Calls addRenderer and/or removeRenderer internally for convenience.
-    @objc
+    /// Calls addRenderer and/or removeRenderer internally for convenience.    
     public nonisolated weak var track: VideoTrack? {
         get { _state.track as? VideoTrack }
         set {

@@ -18,7 +18,6 @@
 
 import Foundation
 import OSLog
-internal import Logging
 
 struct OSLogHandler: LogHandler {
     public var logLevel: Logging.Logger.Level = .debug

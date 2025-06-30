@@ -18,7 +18,7 @@
 
 import Foundation
 import OSLog
-internal @_implementationOnly import Logging
+@_implementationOnly import Logging
 
 
 struct OSLogHandler: LogHandler {

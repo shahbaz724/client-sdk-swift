@@ -19,7 +19,7 @@
 #if canImport(ReplayKit)
 import ReplayKit
 #endif
-internal @_implementationOnly import Logging
+@_implementationOnly import Logging
 
 
 import Combine

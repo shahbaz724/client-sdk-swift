@@ -102,6 +102,7 @@ private extension OSLogType {
 
         // `OSLog` doesn't have `warning`, so use `info`
         case .warning: .info
+        @unknown default: .default
         }
     }
 }

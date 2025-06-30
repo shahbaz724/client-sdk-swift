@@ -32,6 +32,7 @@ let package = Package(
     targets: [
         .target(
             name: "LKObjCHelpers",
+            path: "Sources/LKObjCHelpers",
             publicHeadersPath: "include"
         ),
         .target(

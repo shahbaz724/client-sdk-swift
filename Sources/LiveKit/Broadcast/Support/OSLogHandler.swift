@@ -20,7 +20,7 @@ import Foundation
 import OSLog
 
 struct OSLogHandler: LogHandler {
-    public var logLevel: Logging.Logger.Level = .debug
+    public var logLevel: Logger.Level = .debug
     private let oslogger: OSLog
 
     init(_ oslogger: OSLog) {
@@ -28,9 +28,9 @@ struct OSLogHandler: LogHandler {
     }
 
     public func log(
-        level _: Logging.Logger.Level,
-        message: Logging.Logger.Message,
-        metadata: Logging.Logger.Metadata?,
+        level _: Logger.Level,
+        message: Logger.Message,
+        metadata: Logger.Metadata?,
         source _: String,
         file _: String,
         function _: String,
@@ -62,7 +62,7 @@ struct OSLogHandler: LogHandler {
     /// Add, remove, or change the logging metadata.
     /// - parameters:
     ///    - metadataKey: the key for the metadata item.
-    public subscript(metadataKey metadataKey: String) -> Logging.Logger.Metadata.Value? {
+    public subscript(metadataKey metadataKey: String) -> Logger.Metadata.Value? {
         get {
             metadata[metadataKey]
         }
@@ -71,7 +71,7 @@ struct OSLogHandler: LogHandler {
         }
     }
 
-    private func prettify(_ metadata: Logging.Logger.Metadata) -> String? {
+    private func prettify(_ metadata: Logger.Metadata) -> String? {
         if metadata.isEmpty {
             return nil
         }
@@ -82,7 +82,7 @@ struct OSLogHandler: LogHandler {
 }
 
 private extension OSLogType {
-    static func from(loggerLevel: Logging.Logger.Level) -> Self {
+    static func from(loggerLevel: Logger.Level) -> Self {
         switch loggerLevel {
         case .debug: .debug
 

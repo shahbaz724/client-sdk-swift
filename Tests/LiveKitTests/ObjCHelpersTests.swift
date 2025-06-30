@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import LKObjCHelpers
+@_implementationOnly import LKObjCHelpers
 import XCTest
 
 class ObjCHelperTests: LKTestCase {

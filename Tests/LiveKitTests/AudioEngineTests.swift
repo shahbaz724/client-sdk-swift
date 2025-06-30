@@ -17,7 +17,7 @@
 @preconcurrency import AVFoundation
 @testable import LiveKit
 import LiveKitWebRTC
-import LKObjCHelpers
+@_implementationOnly import LKObjCHelpers
 import XCTest
 
 class AudioEngineTests: LKTestCase, @unchecked Sendable {

@@ -15,6 +15,7 @@
  */
 
 import Foundation
+import Combine
 
 @objc
 public class TrackPublication: NSObject, @unchecked Sendable, ObservableObject, Loggable {

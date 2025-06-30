@@ -15,6 +15,7 @@
  */
 
 import Foundation
+import Combine
 
 /// Helper class to observer ``TrackDelegate`` from Swift UI.
 public class TrackDelegateObserver: ObservableObject, TrackDelegate, @unchecked Sendable {

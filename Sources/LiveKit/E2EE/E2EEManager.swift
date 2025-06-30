@@ -15,6 +15,7 @@
  */
 
 import Foundation
+import Combine
 
 internal import LiveKitWebRTC
 

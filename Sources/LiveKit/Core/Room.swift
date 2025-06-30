@@ -15,6 +15,7 @@
  */
 
 import Foundation
+import Combine
 
 #if canImport(Network)
 import Network

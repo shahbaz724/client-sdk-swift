@@ -19,7 +19,8 @@
 #if canImport(ReplayKit)
 import ReplayKit
 #endif
-internal import Logging/@_implementationOnly
+internal @_implementationOnly import Logging
+
 
 import Combine
 import OSLog
